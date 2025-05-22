@@ -106,8 +106,8 @@ const ChatBar: React.FC<ChatBarProps> = ({ messages, onSend }) => {
                     height: 32,
                     fontSize: "0.9rem",
                     bgcolor: isUser ? "primary.main" : "secondary.main",
-                    ml: isUser ? 0 : 1,
-                    mr: isUser ? 1 : 0,
+                    ml: isUser ? 0 : 1.5,
+                    mr: isUser ? 1.5 : 0,
                   }}
                 >
                   {msg.sender.charAt(0).toUpperCase()}
@@ -115,7 +115,7 @@ const ChatBar: React.FC<ChatBarProps> = ({ messages, onSend }) => {
                 <Box
                   sx={{
                     p: 1,
-                    borderRadius: 0.5,
+                    borderRadius: theme.shape.borderRadius * 2,
                     maxWidth: "70%",
                     fontSize: "0.95rem",
                     boxShadow: 1,
@@ -174,6 +174,10 @@ const ChatBar: React.FC<ChatBarProps> = ({ messages, onSend }) => {
             "& .MuiOutlinedInput-root": {
               borderRadius: 0.5,
               bgcolor: "background.paper",
+              "&:hover": {
+                borderColor: theme.palette.mode === 'dark' ? theme.palette.grey[600] : theme.palette.grey[400],
+                backgroundColor: theme.palette.mode === 'dark' ? theme.palette.grey[800] : theme.palette.grey[50],
+              },
             },
           }}
         />
@@ -187,7 +191,7 @@ const ChatBar: React.FC<ChatBarProps> = ({ messages, onSend }) => {
             },
             width: 40,
             height: 40,
-            borderRadius: "20%",
+            borderRadius: 0.5,
           }}
         >
           <SendIcon />

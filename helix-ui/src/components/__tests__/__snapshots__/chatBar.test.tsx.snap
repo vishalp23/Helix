@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChatBar Component renders correctly with messages 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-zoyayt-MuiPaper-root"
+    style="--Paper-shadow: none;"
+  >
+    <div
+      class="MuiBox-root css-9fg5eh"
+    >
+      <h6
+        class="MuiTypography-root MuiTypography-subtitle1 css-xjmtpv-MuiTypography-root"
+      >
+        Chat with Helix
+      </h6>
+    </div>
+    <div
+      class="MuiBox-root css-1vsmk19"
+    >
+      <ul
+        class="MuiList-root css-54zhjy-MuiList-root"
+      >
+        <div
+          class="MuiBox-root css-1nc67oe"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1shl0b0-MuiAvatar-root"
+          >
+            U
+          </div>
+          <div
+            class="MuiBox-root css-11uusre"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-1k0m1ik-MuiTypography-root"
+            >
+              User
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+            >
+              Hello there!
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-15aaelp"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-147crwy-MuiAvatar-root"
+          >
+            H
+          </div>
+          <div
+            class="MuiBox-root css-1p4e9wv"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-1k0m1ik-MuiTypography-root"
+            >
+              Helix
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+            >
+              Hi! How can I help you today?
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-1nc67oe"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1shl0b0-MuiAvatar-root"
+          >
+            U
+          </div>
+          <div
+            class="MuiBox-root css-11uusre"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-1k0m1ik-MuiTypography-root"
+            >
+              User
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+            >
+              Just testing the chat.
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-15aaelp"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-147crwy-MuiAvatar-root"
+          >
+            H
+          </div>
+          <div
+            class="MuiBox-root css-1p4e9wv"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-1k0m1ik-MuiTypography-root"
+            >
+              Helix
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+            >
+              Test received!
+            </p>
+          </div>
+        </div>
+        <div />
+      </ul>
+    </div>
+    <form
+      class="MuiBox-root css-x39kdh"
+    >
+      <div
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-96pb4q-MuiFormControl-root-MuiTextField-root"
+      >
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall css-1blp12k-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
+            id=":r0:"
+            placeholder="Type your message..."
+            type="text"
+            value=""
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-w4cd9x"
+            >
+              <span
+                aria-hidden="true"
+                class="notranslate"
+              >
+                ​
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-hdgh2x-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="submit"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="SendIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"
+          />
+        </svg>
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ChatBar Component renders correctly with no messages 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-zoyayt-MuiPaper-root"
+    style="--Paper-shadow: none;"
+  >
+    <div
+      class="MuiBox-root css-9fg5eh"
+    >
+      <h6
+        class="MuiTypography-root MuiTypography-subtitle1 css-xjmtpv-MuiTypography-root"
+      >
+        Chat with Helix
+      </h6>
+    </div>
+    <div
+      class="MuiBox-root css-1vsmk19"
+    >
+      <ul
+        class="MuiList-root css-54zhjy-MuiList-root"
+      >
+        <div />
+      </ul>
+    </div>
+    <form
+      class="MuiBox-root css-x39kdh"
+    >
+      <div
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-96pb4q-MuiFormControl-root-MuiTextField-root"
+      >
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall css-1blp12k-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
+            id=":r2:"
+            placeholder="Type your message..."
+            type="text"
+            value=""
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-w4cd9x"
+            >
+              <span
+                aria-hidden="true"
+                class="notranslate"
+              >
+                ​
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-hdgh2x-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="submit"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="SendIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"
+          />
+        </svg>
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
