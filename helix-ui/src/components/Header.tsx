@@ -81,7 +81,17 @@ const Header: React.FC<HeaderProps> = ({ onToggleTheme, isDarkMode }) => {
             H
           </Avatar>
           <Box>
-            <Typography variant="h6" sx={{ fontWeight: 600,color: "text.primary" }}>
+            <Typography
+              variant="h6"
+              sx={{
+                fontWeight: 600,
+                color: "text.primary",
+                textShadow:
+                  theme.palette.mode === "light"
+                    ? "1px 1px 3px rgba(0,0,0,0.2)"
+                    : "1px 1px 3px rgba(0,0,0,0.7)",
+              }}
+            >
               Helix
             </Typography>
             
@@ -109,9 +119,15 @@ const Header: React.FC<HeaderProps> = ({ onToggleTheme, isDarkMode }) => {
             anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
             transformOrigin={{ vertical: "top", horizontal: "right" }}
           >
-            <MenuItem onClick={handleHelpClose}>How to use Helix</MenuItem>
-            <MenuItem onClick={handleHelpClose}>About Helix HR Agent</MenuItem>
-            <MenuItem onClick={handleHelpClose}>Contact Support</MenuItem>
+            <MenuItem onClick={handleHelpClose} sx={{ fontSize: "1rem" }}>
+              How to use Helix
+            </MenuItem>
+            <MenuItem onClick={handleHelpClose} sx={{ fontSize: "1rem" }}>
+              About Helix HR Agent
+            </MenuItem>
+            <MenuItem onClick={handleHelpClose} sx={{ fontSize: "1rem" }}>
+              Contact Support
+            </MenuItem>
           </Menu>
 
           {/* Settings Dropdown */}
@@ -125,9 +141,15 @@ const Header: React.FC<HeaderProps> = ({ onToggleTheme, isDarkMode }) => {
             anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
             transformOrigin={{ vertical: "top", horizontal: "right" }}
           >
-            <MenuItem onClick={handleSettingsClose}>Profile Settings</MenuItem>
-            <MenuItem onClick={handleSettingsClose}>Notification Preferences</MenuItem>
-            <MenuItem onClick={handleSettingsClose}>Theme Settings</MenuItem>
+            <MenuItem onClick={handleSettingsClose} sx={{ fontSize: "1rem" }}>
+              Profile Settings
+            </MenuItem>
+            <MenuItem onClick={handleSettingsClose} sx={{ fontSize: "1rem" }}>
+              Notification Preferences
+            </MenuItem>
+            <MenuItem onClick={handleSettingsClose} sx={{ fontSize: "1rem" }}>
+              Theme Settings
+            </MenuItem>
           </Menu>
 
           {/* User Icon */}
